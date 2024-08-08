@@ -1,0 +1,18 @@
+{
+  "name": "personalportfolio",
+  "version": "1.0.0",
+  "description": "My Personal Portfolio Creating a Personal Portfolio as an initiation to my backend web development journey",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./style.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.9"
+  },
+  "dependencies": {
+    "tailwind-fontawesome": "^0.7.1"
+  }
+}
