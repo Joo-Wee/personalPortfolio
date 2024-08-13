@@ -8,6 +8,9 @@ module.exports = {
       },
       colors: {
         'body-color': '#fafafa'
+      },
+      lineHeight: {
+        'extra-loose': '4.5'
       }
     },
   },

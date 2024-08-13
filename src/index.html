@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="font-body w-full h-screen bg-body-color">
-        <nav>
-            <div>
-                <p>Joo</p>
-                <span>.</span>
+    <div class="font-body w-full h-screen bg-body-color shadow-md shadow-stone-950">
+        <nav class="flex absolute w-full h-20 leading-extra-loose justify-between bg-white ps-24 pe-24">
+            <div class="relative flex-initial w-14">
+                <p class="text-3xl/[70px] font-bold text-teal-600">Joo</p>
+                <span class="absolute text-7xl/none -top-4 -right-4">.</span>
             </div>
 
-            <div id="myNavMenu">
-                <ul>
-                    <li><a href="#home">Home</a>
+            <div id="myNavMenu" class="flex-initial w-8/12">
+                <ul class="flex text-center">
+                    <li class="flex-auto relative w-3/12"><a href="#home">Home</a>
                         <div class = "circle"></div>
                     </li>
-                    <li><a href="#about">About</a>
+                    <li class="flex-auto relative w-3/12"><a href="#about">About</a>
                         <div class="circle"></div>
                     </li>
-                    <li><a href="#projects">Projects</a>
+                    <li class="flex-auto relative w-3/12"><a href="#projects">Projects</a>
                         <div class="circle"></div>
                     </li>
-                    <li><a href="#contact">Contact</a>
+                    <li class="flex-auto relative w-3/12"><a href="#contact">Contact</a>
                         <div class="circle"></div>
                     </li>
                 </ul>
             </div>
 
-            <div><button>Download CV <i class="fa-solid fa-download"></i>Download CV</button></div>
+            <div class="flex-initial w-36"><button>Download CV <i class="fa-solid fa-download"></i></button></div>
         </nav>
     </div>
 </html>
