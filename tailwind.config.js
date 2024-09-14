@@ -7,10 +7,11 @@ module.exports = {
         body: 'Poppins'
       },
       colors: {
-        'body-color': '#fafafa'
+        'body-color': '#fafafa',
+        'btn-color': '#efefef'
       },
       lineHeight: {
-        'extra-loose': '4.5'
+        'extra-loose': '5.5'
       }
     },
   },
