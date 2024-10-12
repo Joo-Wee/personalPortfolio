@@ -19,6 +19,9 @@ module.exports = {
       },
       lineHeight: {
         'extra-loose': '5.5'
+      },
+      translate: {
+        'neg-1/2': '-50%',
       }
     },
   },
