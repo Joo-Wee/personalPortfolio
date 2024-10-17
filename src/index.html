@@ -7,59 +7,61 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div class="font-body w-full h-screen bg-body-color shadow-md shadow-stone-950">
-        <nav class="flex fixed w-full h-20 leading-extra-loose justify-between bg-body-color ps-24 pe-24">
+<body class="bg-body-color">
+    <div class="w-full relative overflow-x-hidden">
+        <nav id="header" class="flex fixed w-full h-[90px] leading-extra-loose justify-between bg-body-color ps-[9vw] pe-[9vw] z-[100]">
             <div class="relative flex-initial w-14">
                 <p class="text-3xl/[70px] font-bold text-teal-600">Joo</p>
                 <span class="absolute text-7xl/none -top-4 -right-4">.</span>
             </div>
 
-        <div id="myNavMenu" class="flex-initial w-8/12">
+        <div id="myNavMenu" class="flex-initial w-8/12 list-none relative">
                 <ul class="flex text-center">
-                    <li class="flex-auto relative w-3/12"><a href="#home">Home</a>
+                    <li class="flex-auto relative w-3/12 list"><a href="#home" class="no-underline text-feat-text-col font-semibold ps-[15px] pe-[15px] ms-5 me-5 relative text-[#6e57e0] duration-300 after:content-[''] after:absolute after:left-1/2 after:-bottom-[15px] after:-translate-y-1/2 after:-translate-x-1/2 after:w-[5px] after:h-[5px] after:bg-[#6e57e0] after:rounded-5xl">Home</a>
                         <div class = "circle"></div>
                     </li>
-                    <li class="flex-auto relative w-3/12"><a href="#about">About</a>
+                    <li class="flex-auto relative w-3/12 list"><a href="#about" class="no-underline text-feat-text-col font-semibold ps-[15px] pe-[15px] ms-5 me-5">About</a>
                         <div class="circle"></div>
                     </li>
-                    <li class="flex-auto relative w-3/12"><a href="#projects">Projects</a>
+                    <li class="flex-auto relative w-3/12 list"><a href="#projects" class="no-underline text-feat-text-col font-semibold ps-[15px] pe-[15px] ms-5 me-5">Projects</a>
                         <div class="circle"></div>
                     </li>
-                    <li class="flex-auto relative w-3/12"><a href="#contact">Contact</a>
+                    <li class="flex-auto relative w-3/12 list"><a href="#contact" class="no-underline text-feat-text-col font-semibold ps-[15px] pe-[15px] ms-5 me-5">Contact</a>
                         <div class="circle"></div>
                     </li>
                 </ul>
             </div>
 
-            <div class="flex-initial w-44 p-0 box-border"><button class = "font-normal py-4 px-5 bg-btn-color rounded-xl leading-none">Download CV <i class="fa-solid fa-download"></i></button></div>
+            <div class="flex-initial w-44 p-0 box-border">
+                <button class = "font-normal py-4 px-5 bg-btn-color rounded-xl leading-none hover:bg-[#6e57e0] hover:text-white">Download CV <i class="ml-2.5 fa-solid fa-download"></i></button>
+            </div>
         </nav>
-        <main class="ps-24 pe-24">
-            <section id="home" class="relative flex h-1/6 min-h-7/10">
-                <div class="relative flex justify-center content-center min-h-1/8 flex-col w-1/2 pl-8">
+        <main class="ps-[10vw] pe-[10vw]">
+            <section id="home" class="relative flex h-[100vh] min-h-[700px]">
+                <div class="relative flex justify-center content-center min-h-[80vh] flex-col w-1/2 pl-5">
                     <div>
-                        <span class="bg-feat-box-color text-white px-2 py-0.5 text-sm rounded">Joo Manasseh</span>
+                        <span class="bg-feat-box-color text-white px-2 py-[3px] text-xs rounded">Joo Manasseh</span>
                     </div>
-                    <div class="text-5xl font-semibold text-feat-text-col my-6">
-                        <p>I'm <span class="typedText capitalize text-teal-600"></span></p>
+                    <div class="text-[50px] font-semibold text-feat-text-col my-5">
+                        <p>I'm a <span class="typedText capitalize text-teal-600"></span></p>
                     </div>
-                    <div class="text-base mb-9 text-feat-text-col">
+                    <div class="text-[15px] mb-[30px] text-feat-text-col">
                         <p>Experienced Wordpress Developer with a passion for creating visually stunning and user-friendly websites.</p>
                     </div>
 					<div class = "flex gap-5">
-						<button class = "font-medium py-3 px-3 border-0 rounded-xl cursor-pointer duration-400 bg-[#6e57e0] text-white">Hire Me</button>
+						<button class = "font-medium py-3 px-3 border-0 rounded-xl cursor-pointer duration-400 bg-[#6e57e0] text-white hover:bg-[#285bd4]">Hire Me</button>
 						<button class = "font-medium py-3 px-3 bg-btn-color border-0 rounded-xl cursor-pointer duration-400">Download CV<i class="ml-2.5 fa-solid fa-download"></i></button>						
 					</div>
-					<div class = "flex mt-20 gap-8">
-                        <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer"><i class="fa-brands fa-instagram"></i></div>
-                        <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer"><i class="fa-brands fa-linkedin-in"></i></div>
-                        <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer"><i class="fa-brands fa-x-twitter"></i></div>
-                        <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer"><i class="fa-brands fa-github"></i></div>
+					<div class = "flex mt-[5em] gap-[30px]">
+                        <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer hover:text-[#6e57e0]"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer hover:text-[#6e57e0]"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer hover:text-[#6e57e0]"><i class="fa-brands fa-x-twitter"></i></div>
+                        <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer hover:text-[#6e57e0]"><i class="fa-brands fa-github"></i></div>
 					</div>
                 </div>
-                <div class="flex justify-end items-center min-h-80 w-1/2">
-                    <div class="my-auto mx-0 w-96 h-96">
-                        <img class="w-96 h-96 object-contain" src="https://lh3.googleusercontent.com/pw/AP1GczNyZj171MR_i0yvqfhJP0wFMw20ZCrb9qad6mUS6C38XqroHantIzE4R92RUT2yi9BSul0fThLwugDOayevb3mZB13023JXgKAVVkjJUQvN8zcswITy51957wQKyhdbeJPpOBr9qdcslagT3ENOS6mtXg=w600-h600-s-no-gm?authuser=0" alt="Profile-Pic">
+                <div class="flex justify-end items-center min-h-[80vh] w-1/2">
+                    <div class="my-auto mx-0 w-[380px] h-[380px]">
+                        <img class="w-[380px] h-[380px] object-contain" src="https://lh3.googleusercontent.com/pw/AP1GczNyZj171MR_i0yvqfhJP0wFMw20ZCrb9qad6mUS6C38XqroHantIzE4R92RUT2yi9BSul0fThLwugDOayevb3mZB13023JXgKAVVkjJUQvN8zcswITy51957wQKyhdbeJPpOBr9qdcslagT3ENOS6mtXg=w600-h600-s-no-gm?authuser=0" alt="Profile-Pic">
                     </div>
                 </div>
                 <div class="scroll-icon-box">
@@ -69,18 +71,18 @@
                     </a>
                 </div>
             </section>
-            <section id="about" class="[padding-block: 5em]">
+            <section id="about" class="py-[5em]">
                 <div class="text-center mb-[5em]">
-                    <h1 class="font-semibold mb-2 5">About Me</h1>
+                    <h1 class="font-semibold mb-2.5">About Me</h1>
                 </div>
-                <div class="flex justify-between w-full gap-12">
+                <div class="flex justify-between w-full h-auto gap-[50px]">
                     <div class="flex w-1/2">
-                        <div class="relative flex items-center flex-col [padding-block: 30px 70px] ps-5 pe-5 w-full bg-white shadow-[rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px] rounded-2xl">
-                            <h3 class="text-xl font-semibold mb-3 5">My Introduction</h3>
-                            <p class="text-center text-base text-[#777]">I am well-versed in HTML, CSS and Javascript, as well as other cutting edge frameworks and libraries, which allow me to implement interactive features. Additionally, I have experience working with content management systems such as Wordpress
+                        <div class="relative flex items-center flex-col py-[30px] px-[70px] ps-5 pe-5 w-full bg-white shadow-[rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px] rounded-2xl">
+                            <h3 class="text-xl font-semibold text-feat-text-col mb-[15px]">My Introduction</h3>
+                            <p class="text-center text-[15px] text-[#777]">I am well-versed in HTML, CSS and Javascript, as well as other cutting edge frameworks and libraries, which allow me to implement interactive features. Additionally, I have experience working with content management systems such as Wordpress
                             </p>
                             <div>
-                                <button class="font-medium py-3 px-5 border-0 rounded-xl cursor-pointer duration-400 absolute right-5 bottom-5 bg-[#6e57e0] text-white rounded-3xl">Download CV<i class="ml-2.5 fa-solid fa-download"></i></button>
+                                <button class="font-medium py-3 px-5 border-0 rounded-xl cursor-pointer duration-400 absolute right-5 -bottom-4 bg-[#6e57e0] text-white rounded-5xl">Download CV<i class="ml-2.5 fa-solid fa-download"></i></button>
                             </div>
                         </div>
                     </div>
@@ -139,7 +141,7 @@
                     </div>
                 </div>
             </section>
-            <section class="[padding-block: 5em]" id="contact">
+            <section class="py-[5em]" id="contact">
                 <div class="text-center mb-[5em]">
                     <h1 class="font-semibold mb-2 5">Get in Touch</h1>
                     <span class="text-[#999]">Do you have a project in your mind, contact me here</span>
@@ -148,18 +150,18 @@
                     <div class="flex w-1/2">
                         <div class="relative flex flex-col justify-center items-center py-5 px-7 w-full h-[315px] bg-[#6e57e0] rounded-lg box-shadow-[1px 8px 10px 2px rgba(0, 0, 0, 0.1)] overflow-hidden">
                             <h2 class="text-white mb-5">Find Me <i class="fa-solid fa-turn-down"></i></h2>
-                            <p class="flex items-center gap-2 5 text-white [margin-block: 5px]"><i class="text-[18px] fa-regular fa-envelope"></i> Email: maphadathrowmhijoo@gmail.com</p>
-                            <p class="flex items-center gap-2 5 text-white [margin-block: 5px]"><i class="text-[18px] fa-solid fa-phone"></i> +233 50 789 5622</p>
+                            <p class="flex items-center gap-2 5 text-white my-[5px]"><i class="text-[18px] fa-regular fa-envelope"></i> Email: maphadathrowmhijoo@gmail.com</p>
+                            <p class="flex items-center gap-2 5 text-white my-[5px]"><i class="text-[18px] fa-solid fa-phone"></i> +233 50 789 5622</p>
                         </div>
                     </div>
                     <div class="flex w-1/2">
                         <div class="flex flex-col gap-2 5 w-full">
                             <div class="flex gap-2 5 w-full">
-                                <input type="text" class="w-1/2 h-14 bg-transparent [border: 2px solid #AAA] rounded-lg [padding-inline: 20px] outline-none" placeholder="Name">
-                                <input type="text" class="w-1/2 h-14 bg-transparent [border: 2px solid #AAA] rounded-lg [padding-inline: 20px] outline-none" placeholder="Email">
+                                <input type="text" class="w-1/2 h-14 bg-transparent border-2 border-solid border-[#AAA] rounded-lg ps-5 pe-5 outline-none" placeholder="Name">
+                                <input type="text" class="w-1/2 h-14 bg-transparent border-2 border-solid border-[#AAA] rounded-lg ps-5 pe-5 outline-none" placeholder="Email">
                             </div>
-                            <div class="w-full h-[250px] bg-transparent [border: 2px solid #AAA] rounded-lg py-3 5 px-5 outline-none resize-none">
-                                <textarea placeholder="Message"></textarea>
+                            <div>
+                                <textarea class="w-full h-[250px] bg-transparent border-2 border-solid border-[#AAA] rounded-lg py-3 5 px-5 outline-none resize-none" placeholder="Message"></textarea>
                             </div>
                             <div>
                                 <button class="flex items-center justify-center bg-[#6e57e0] text-white font-normal py-3 px-5 border-none rounded-lg cursor-pointer duration-400">Send <i class="text-[18px] fa-regular fa-paper-plane"></i></button>
@@ -169,6 +171,37 @@
                 </div>
             </section>
         </main>
+        <footer class="flex justify-center items-center flex-col gap-y-[30px] bg-[#F8F8F8] py-10 px-[60px]">
+            <div>
+                <p class="text-[25px] font-normal">Joo Manasseh .</p>
+            </div>
+            <div class="flex">
+                <ul class="flex">
+                    <li class="list-none">
+                        <a href="#home" class="no-underline text-feat-text-col font-semibold ms-5 me-5">Home</a>
+                    </li>
+                    <li class="list-none">
+                        <a href="#about" class="no-underline text-feat-text-col font-semibold ms-5 me-5">About</a>
+                    </li>
+                    <li class="list-none">
+                        <a href="#projects" class="no-underline text-feat-text-col font-semibold ms-5 me-5">Project</a>
+                    </li>
+                    <li class="list-none">
+                        <a href="#contact" class="no-underline text-feat-text-col font-semibold ms-5 me-5">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex gap-[30px]">
+                <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer"><i class="fa-brands fa-instagram"></i></div>
+                <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer"><i class="fa-brands fa-x-twitter"></i></div>
+                <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] cursor-pointer"><i class="fa-brands fa-github"></i></div>
+            </div>
+            <div class="text-sm mt-2.5">
+                <p>Copyright © <a href="#home" class="no-underline">Joo Manasseh</a> - All rights reserved
+                </p>
+            </div>
+        </footer>
     </div>
   </body>
 </html>
