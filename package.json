@@ -4,7 +4,8 @@
   "description": "My Personal Portfolio Creating a Personal Portfolio as an initiation to my backend web development journey",
   "main": "index.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./style.css -o ./src/output.css --watch"
+    "watch": "npx tailwindcss -i ./style.css -o ./src/output.css --watch",
+    "start": "lite-server"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,9 @@
     "tailwindcss": "^3.4.13"
   },
   "dependencies": {
-    "tailwind-fontawesome": "^0.7.1"
+    "lite-server": "^2.6.1",
+    "scrollreveal": "^4.0.9",
+    "tailwind-fontawesome": "^0.7.1",
+    "typed.js": "^2.1.0"
   }
 }
