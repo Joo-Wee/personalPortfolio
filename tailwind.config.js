@@ -22,6 +22,11 @@ module.exports = {
       },
       translate: {
         'neg-1/2': '-50%',
+      },
+      keyframes: {
+        imgFloat: {
+          '50%': { transform: 'translateY(10px)' }
+        }
       }
     },
   },
